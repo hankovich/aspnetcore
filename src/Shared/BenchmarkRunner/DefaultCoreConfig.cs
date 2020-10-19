@@ -30,7 +30,7 @@ namespace BenchmarkDotNet.Attributes
             AddJob(Job.Default
 #if NETCOREAPP2_1
                 .WithToolchain(CsProjCoreToolchain.From(NetCoreAppSettings.NetCoreApp21))
-#elif NETCOREAPP3_1
+#elif NETCOREAPP3_0
                 .WithToolchain(CsProjCoreToolchain.From(new NetCoreAppSettings("netcoreapp3.0", null, ".NET Core 3.0")))
 #elif NETCOREAPP3_1
                 .WithToolchain(CsProjCoreToolchain.From(new NetCoreAppSettings("netcoreapp3.1", null, ".NET Core 3.1")))
